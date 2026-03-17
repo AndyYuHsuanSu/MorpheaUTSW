@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support Products — Sclerosing Skin Disease Education</title>
+  <meta name="description" content="Non-treatment support products recommended by our provider for patients with morphea and scleroderma." />
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .product-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:1.5rem; margin-top:2.5rem; }
+    .product-card {
+      background: var(--warm-white);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.75rem;
+      transition: all 0.25s ease;
+    }
+    .product-card:hover { transform:translateY(-3px); box-shadow:0 12px 32px rgba(0,0,0,0.07); }
+    .product-card__category {
+      font-size:0.7rem; letter-spacing:0.15em; text-transform:uppercase;
+      color:var(--clay); font-weight:500; margin-bottom:0.6rem;
+    }
+    .product-card__name {
+      font-family:var(--font-display); font-size:1.2rem; font-weight:600;
+      color:var(--deep); margin-bottom:0.5rem;
+    }
+    .product-card__desc { font-size:0.88rem; color:var(--text-light); line-height:1.6; margin-bottom:1.25rem; }
+    .product-card__link {
+      display:inline-block; padding:0.6rem 1.25rem;
+      background:var(--forest); color:#fff;
+      border-radius:var(--radius); font-size:0.82rem; font-weight:500;
+      transition:background 0.2s;
+    }
+    .product-card__link:hover { background:var(--deep); }
+    .micro-disclosure {
+      font-size:0.75rem; color:var(--text-light);
+      margin-top:0.6rem; font-style:italic;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="../index.html" class="nav__brand">Sclerosing<span>Skin</span></a>
+      <ul class="nav__links">
+        <li><a href="../index.html">Start Here</a></li>
+        <li><a href="patients.html">Patients & Families</a></li>
+        <li><a href="clinicians.html">For Clinicians</a></li>
+        <li><a href="products.html" class="active">Support Products</a></li>
+        <li><a href="disclosures.html">Disclosures</a></li>
+      </ul>
+      <div class="nav__toggle"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section style="padding:5rem 0 3rem; background: linear-gradient(180deg, rgba(196,168,130,0.1) 0%, transparent 100%);">
+    <div class="container">
+      <p class="section__label">Support Products</p>
+      <h1 class="section__title" style="font-size:clamp(2.2rem,5vw,3.8rem);">
+        Non-treatment <em>support resources</em>
+      </h1>
+      <p class="section__body" style="margin-top:1rem; margin-bottom:2rem;">
+        These are non-treatment products that our provider has found may support comfort and
+        daily routine for people living with sclerosing skin disease. <strong>Support is not
+        the same as treatment.</strong>
+      </p>
+
+      <!-- Required Primary Disclaimer -->
+      <div class="hero__disclaimer" style="max-width:68ch; margin:0;">
+        <strong>Educational use only — not medical advice.</strong><br>
+        Content and links on this page are provided for general education and support and are
+        not a substitute for professional medical advice, diagnosis, or treatment.
+        Use of this page does not establish a doctor–patient relationship.
+      </div>
+    </div>
+  </section>
+
+  <!-- COI Disclosure — required, visible without scrolling -->
+  <section style="padding:2rem 0; background:var(--cream); border-bottom:1px solid var(--border);">
+    <div class="container">
+      <div class="compliance">
+        <p class="compliance__title">Transparency & COI Disclosure</p>
+        <div class="compliance__text">
+          <p>
+            Some links on this page relate to outside activities or financial interests
+            (for example, product sales or affiliate links). These relationships are disclosed
+            to reduce potential bias and avoid the appearance of endorsement.
+          </p>
+          <br>
+          <p>The intent of this disclosure is to ensure that relationships with outside entities do not:</p>
+          <ul>
+            <li>Bias educational content</li>
+            <li>Detract from academic, clinical, or research responsibilities</li>
+            <li>Influence trainees or learners</li>
+            <li>Imply institutional or employer endorsement</li>
+            <li>Result in improper use of institutional or state resources</li>
+          </ul>
+          <br>
+          <p><em>Some items may generate revenue that supports this education platform.</em></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Grid -->
+  <section class="section">
+    <div class="container">
+      <p class="section__label reveal">Curated by our provider</p>
+      <h2 class="section__title reveal">Recommended <em>support items</em></h2>
+      <p class="section__body reveal">
+        Add your recommended products below. Each card links out directly to the retailer —
+        no checkout happens on this site.
+      </p>
+
+      <div class="product-grid">
+
+        <!-- ── PRODUCT CARD TEMPLATE ──────────────────────────────
+             Duplicate this block to add more products.
+             Replace: category, name, description, and href link.
+        ─────────────────────────────────────────────────────────── -->
+        <div class="product-card reveal">
+          <p class="product-card__category">Moisturizers</p>
+          <h3 class="product-card__name">Product Name Here</h3>
+          <p class="product-card__desc">
+            Brief description of what this is and why it may be helpful for patients
+            with sclerosing skin disease. Keep it factual, not promotional.
+          </p>
+          <a href="#" class="product-card__link" target="_blank" rel="noopener noreferrer">
+            View Product →
+          </a>
+          <p class="micro-disclosure">Some items may generate revenue that supports this education platform.</p>
+        </div>
+
+        <div class="product-card reveal">
+          <p class="product-card__category">Sun Protection</p>
+          <h3 class="product-card__name">Product Name Here</h3>
+          <p class="product-card__desc">
+            Brief description of what this is and why it may be helpful for patients
+            with sclerosing skin disease. Keep it factual, not promotional.
+          </p>
+          <a href="#" class="product-card__link" target="_blank" rel="noopener noreferrer">
+            View Product →
+          </a>
+          <p class="micro-disclosure">Some items may generate revenue that supports this education platform.</p>
+        </div>
+
+        <div class="product-card reveal">
+          <p class="product-card__category">Comfort & Routine</p>
+          <h3 class="product-card__name">Product Name Here</h3>
+          <p class="product-card__desc">
+            Brief description of what this is and why it may be helpful for patients
+            with sclerosing skin disease. Keep it factual, not promotional.
+          </p>
+          <a href="#" class="product-card__link" target="_blank" rel="noopener noreferrer">
+            View Product →
+          </a>
+          <p class="micro-disclosure">Some items may generate revenue that supports this education platform.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Reminder -->
+  <section style="padding:1.5rem 0; background:var(--cream); border-top:1px solid var(--border);">
+    <div class="container" style="text-align:center; font-size:0.82rem; color:var(--text-light);">
+      Educational use only &bull; not medical advice &bull; not a substitute for clinical care
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__brand">Sclerosingskin</div>
+      <div class="footer__links">
+        <a href="../index.html">Start Here</a>
+        <a href="patients.html">Patients & Families</a>
+        <a href="clinicians.html">For Clinicians</a>
+        <a href="products.html">Support Products</a>
+        <a href="disclosures.html">Disclosures</a>
+      </div>
+      <p class="footer__disclaimer">
+        Educational use only — not medical advice. Not a substitute for professional medical advice, diagnosis, or treatment.
+        Use of this page does not establish a doctor–patient relationship.<br><br>
+        Views are my own and are not presented on behalf of my employer.
+      </p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
