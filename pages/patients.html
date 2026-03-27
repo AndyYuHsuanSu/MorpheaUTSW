@@ -41,40 +41,96 @@
     </div>
   </section>
 
-  <!-- Basics Section -->
+  <!-- Basics Section — Mayo Clinic style -->
   <section class="section" id="basics">
     <div class="container">
       <p class="section__label reveal">The Basics</p>
       <h2 class="section__title reveal">Morphea vs. Scleroderma — <em>What's the difference?</em></h2>
-      <p class="section__body reveal" style="margin-bottom:2.5rem;">
+      <p class="section__body reveal" style="margin-bottom:3rem;">
         These two terms get used interchangeably online — but they are not the same condition.
         Understanding the distinction is one of the most useful first steps.
       </p>
-      <div class="cards">
-        <div class="card reveal">
-          <div class="card__icon">🔵</div>
-          <h3 class="card__title">Morphea</h3>
-          <p class="card__text">
-            A localized form of scleroderma affecting only the skin and underlying tissue.
-            It does not typically affect internal organs. Understanding your subtype matters —
-            ask your clinician which type you have.
-          </p>
-        </div>
-        <div class="card reveal">
-          <div class="card__icon">🟢</div>
-          <h3 class="card__title">Systemic Scleroderma</h3>
-          <p class="card__text">
-            A systemic condition that can involve skin, blood vessels, and internal organs.
-            Early recognition and specialized care are especially important.
-          </p>
-        </div>
-        <div class="card reveal">
-          <div class="card__icon">❓</div>
-          <h3 class="card__title">Questions to Ask Your Doctor</h3>
-          <p class="card__text">
-            What type do I have? What does monitoring look like? What symptoms should prompt
-            me to call? Arriving prepared helps you get more from each appointment.
-          </p>
+
+      <!-- Mayo-style feature cards -->
+      <div class="mayo-grid reveal">
+
+        <!-- Card 1: Morphea — large with image -->
+        <a href="morphea.html" class="mayo-card mayo-card--large">
+          <div class="mayo-card__img" style="background: linear-gradient(135deg, var(--mist) 0%, var(--sage) 100%);">
+            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 256 256" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+              <ellipse cx="128" cy="90" rx="88" ry="44"/>
+              <path d="M40 90c0 24.3 39.4 44 88 44s88-19.7 88-44"/>
+              <path d="M40 124c0 24.3 39.4 44 88 44s88-19.7 88-44"/>
+              <path d="M40 158c0 24.3 39.4 44 88 44s88-19.7 88-44"/>
+            </svg>
+          </div>
+          <div class="mayo-card__body">
+            <div class="mayo-card__icon-row">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 256 256" fill="none" stroke="var(--sage)" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
+                <ellipse cx="128" cy="90" rx="88" ry="44"/>
+                <path d="M40 90c0 24.3 39.4 44 88 44s88-19.7 88-44"/>
+              </svg>
+              <span class="mayo-card__tag">Localized</span>
+            </div>
+            <h3 class="mayo-card__title">Morphea</h3>
+            <p class="mayo-card__text">
+              A localized form of sclerosing skin disease that affects the skin and
+              underlying tissue — but not the internal organs. Subtypes vary widely,
+              and knowing yours matters.
+            </p>
+            <span class="mayo-card__link">Learn about Morphea →</span>
+          </div>
+        </a>
+
+        <!-- Right column: two smaller cards stacked -->
+        <div class="mayo-col">
+
+          <a href="scleroderma.html" class="mayo-card mayo-card--small">
+            <div class="mayo-card__img mayo-card__img--sm" style="background: linear-gradient(135deg, #d8e8e0 0%, var(--forest) 100%);">
+              <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 256 256" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="128" cy="48" r="22"/>
+                <path d="M80 100h96"/>
+                <line x1="128" y1="100" x2="128" y2="172"/>
+                <line x1="128" y1="148" x2="96" y2="196"/>
+                <line x1="128" y1="148" x2="160" y2="196"/>
+                <line x1="80" y1="100" x2="56" y2="152"/>
+                <line x1="176" y1="100" x2="200" y2="152"/>
+              </svg>
+            </div>
+            <div class="mayo-card__body">
+              <div class="mayo-card__icon-row">
+                <span class="mayo-card__tag">Systemic</span>
+              </div>
+              <h3 class="mayo-card__title">Scleroderma</h3>
+              <p class="mayo-card__text">
+                A systemic condition that can involve skin, blood vessels, and internal organs.
+                Early recognition and specialist care are especially important.
+              </p>
+              <span class="mayo-card__link">Learn about Scleroderma →</span>
+            </div>
+          </a>
+
+          <a href="questions.html" class="mayo-card mayo-card--small mayo-card--accent">
+            <div class="mayo-card__body" style="padding:2rem;">
+              <div class="mayo-card__icon-row">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 256 256" fill="none" stroke="var(--clay)" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="48" y="40" width="160" height="176" rx="8"/>
+                  <path d="M96 40a32 32 0 0 1 64 0"/>
+                  <line x1="88" y1="132" x2="168" y2="132"/>
+                  <line x1="88" y1="164" x2="168" y2="164"/>
+                  <line x1="88" y1="100" x2="128" y2="100"/>
+                </svg>
+                <span class="mayo-card__tag" style="color:var(--clay);">Appointment Prep</span>
+              </div>
+              <h3 class="mayo-card__title">Questions to Ask Your Doctor</h3>
+              <p class="mayo-card__text">
+                What type do I have? What should I monitor? What's my follow-up plan?
+                Arrive prepared and leave with a clear next step.
+              </p>
+              <span class="mayo-card__link" style="color:var(--clay);">View question guide →</span>
+            </div>
+          </a>
+
         </div>
       </div>
     </div>
