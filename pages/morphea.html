@@ -3,119 +3,472 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Morphea — Sclerosing Skin Disease Education</title>
+  <title>Linear Morphea — Sclerosing Skin Disease Education</title>
   <link rel="stylesheet" href="../css/style.css" />
 </head>
 <body>
 
-  <nav class="nav">
-    <div class="nav__inner">
-      <a href="../index.html" class="nav__brand">Sclerosing<span>Skin</span></a>
-      <ul class="nav__links">
-        <li><a href="../index.html">Start Here</a></li>
-        <li><a href="patients.html" class="active">Patients & Families</a></li>
-        <li><a href="clinicians.html">For Clinicians</a></li>
-        <li><a href="products.html">Support Products</a></li>
-        <li><a href="disclosures.html">Disclosures</a></li>
-      </ul>
-      <div class="nav__toggle"><span></span><span></span><span></span></div>
-    </div>
-  </nav>
+<div id="reading-progress"></div>
 
-  <!-- Breadcrumb -->
-  <div style="background:var(--cream); border-bottom:1px solid var(--border); padding:0.75rem 0;">
-    <div class="container" style="font-size:0.82rem; color:var(--text-light);">
-      <a href="patients.html" style="color:var(--forest);">Patients & Families</a>
-      <span style="margin:0 0.5rem;">›</span>
-      Morphea
-    </div>
+<nav class="nav" id="main-nav">
+  <div class="nav__inner">
+    <a href="../index.html" class="nav__brand">Sclerosing<span>Skin</span></a>
+    <ul class="nav__links">
+      <li><a href="../index.html">Start Here</a></li>
+      <li><a href="patients.html" class="active">Patients & Families</a></li>
+      <li><a href="clinicians.html">For Clinicians</a></li>
+      <li><a href="products.html">Support Products</a></li>
+      <li><a href="disclosures.html">Disclosures</a></li>
+    </ul>
+    <div class="nav__toggle"><span></span><span></span><span></span></div>
   </div>
+</nav>
 
-  <!-- Header -->
-  <section style="padding:4rem 0 2rem; background: linear-gradient(180deg, rgba(122,158,135,0.08) 0%, transparent 100%);">
-    <div class="container" style="max-width:780px;">
-      <span style="font-size:0.7rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--sage); font-weight:500;">Localized · Skin Only</span>
-      <h1 class="section__title" style="font-size:clamp(2.4rem,5vw,4rem); margin-top:0.5rem;">Morphea</h1>
-      <p class="section__body" style="font-size:1.05rem; margin-top:0.75rem;">
-        A localized form of sclerosing skin disease affecting the skin and tissue beneath —
-        but not the internal organs. Here is what our specialist wants you to know.
-      </p>
-      <div class="hero__disclaimer" style="margin:2rem 0 0; max-width:100%;">
-        <strong>Educational use only — not medical advice.</strong>
-        Always consult your clinician for personal medical decisions.
+<!-- Page Header — full width above the two-col layout -->
+<div style="background: linear-gradient(160deg, rgba(122,158,135,0.09) 0%, transparent 55%); border-bottom: 1px solid var(--border); padding: 2.75rem 0 2.25rem;">
+  <div style="max-width:1100px; margin:0 auto; padding:0 2rem;">
+    <div style="font-size:0.78rem; color:var(--text-light); margin-bottom:1.25rem;">
+      <a href="patients.html" style="color:var(--forest);">Patients & Families</a>
+      <span style="margin:0 0.5rem; color:var(--border);">›</span>
+      <span>Linear Morphea</span>
+    </div>
+    <div style="display:flex; align-items:flex-end; justify-content:space-between; flex-wrap:wrap; gap:1rem;">
+      <div>
+        <span style="font-size:0.65rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--sage); font-weight:700;">Localized · Skin Only</span>
+        <h1 style="font-family:var(--font-display); font-size:clamp(2.2rem,5vw,3.8rem); font-weight:300; color:var(--deep); line-height:1.1; margin-top:0.4rem;">
+          Linear <em style="font-style:italic; color:var(--forest);">Morphea</em>
+        </h1>
+        <p style="font-size:0.92rem; color:var(--text-light); margin-top:0.6rem; max-width:58ch; line-height:1.65;">
+          Patient & family education based on Dr. Heidi Jacobe's recorded explanation —
+          board-certified dermatologist, UT Southwestern, 20+ years of morphea expertise.
+        </p>
+      </div>
+      <div style="display:flex; align-items:center; gap:1.5rem; flex-shrink:0;">
+        <span style="font-size:0.78rem; color:var(--text-light); display:flex; align-items:center; gap:0.35rem; white-space:nowrap;">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          ~8 min read
+        </span>
+        <div style="background:var(--mist); border-left:3px solid var(--sage); border-radius:4px; padding:0.65rem 1rem; font-size:0.78rem; color:var(--text-light); max-width:280px; line-height:1.5;">
+          <strong style="color:var(--text);">Educational use only.</strong> Not medical advice — always consult your clinician.
+        </div>
       </div>
     </div>
-  </section>
+  </div>
+</div>
+
+<!-- Two-column article layout — sidebar flush left, no gap -->
+<div class="article-page">
+
+  <!-- Sticky Sidebar TOC -->
+  <aside class="article-sidebar">
+    <div class="toc__title">On this page</div>
+    <ul class="toc__list">
+      <li><a href="#what-is">What is Linear Morphea?</a></li>
+      <li><a href="#activity-damage">Activity vs. Damage</a></li>
+      <li><a href="#risk">Risk: Depth & Location</a></li>
+      <li><a href="#head-face">Head & Face Risks</a></li>
+      <li><a href="#treatment">Treatment</a></li>
+      <li><a href="#fire-meter">The Fire Meter</a></li>
+      <li><a href="#damage">Treating Damage</a></li>
+      <li><a href="#provider">Finding a Provider</a></li>
+      <li><a href="#proactive">Being Proactive</a></li>
+      <li><a href="#myths">Myth Busting</a></li>
+    </ul>
+  </aside>
 
   <!-- Main Content -->
-  <section class="section" style="padding-top:2.5rem;">
-    <div class="container" style="max-width:780px;">
+  <main class="article-main">
 
-      <!-- ═══════════════════════════════════════════════════════
-           PHYSICIAN CONTENT GOES HERE
-           Replace the placeholder paragraphs below with content
-           drawn from the physician's audio/notes.
-      ════════════════════════════════════════════════════════ -->
+    <!-- WHAT IS MORPHEA -->
+    <div class="content-section reveal" id="what-is">
+      <div class="content-section__label">The Basics</div>
+      <h2>What is Linear Morphea?</h2>
+      <p>Linear morphea is also called <strong>localized scleroderma</strong> — they are the same thing. It is a condition in which the skin becomes hardened and thickened, but unlike systemic scleroderma, it stays in the skin and does not affect internal organs like the heart, lungs, or GI system.</p>
+      <p>Linear morphea is an umbrella term that includes several conditions known by different names — all of which are simply linear morphea occurring in different parts of the body.</p>
+      <div class="info-box">
+        <div class="info-box__title">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--sage)" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          Names you may have heard
+        </div>
+        <ul>
+          <li><strong>En coup de sabre</strong> — linear morphea affecting the forehead or scalp</li>
+          <li><strong>Hemifacial atrophy</strong> — affecting one side of the face</li>
+          <li><strong>Parry-Romberg syndrome</strong> — affecting the face with deeper tissue involvement</li>
+          <li><strong>Craniofacial morphea</strong> — a broader term for morphea of the head</li>
+        </ul>
+      </div>
+    </div>
 
-      <h2 class="section__title reveal" style="font-size:1.8rem;">What is Morphea?</h2>
-      <p class="section__body reveal" style="margin-bottom:1.5rem;">
-        <!-- ADD PHYSICIAN'S EXPLANATION HERE -->
-        Morphea is a condition in which the skin becomes hardened and thickened in localized
-        patches. Unlike systemic scleroderma, morphea stays in the skin — it does not typically
-        affect the heart, lungs, or other internal organs.
-      </p>
+    <hr class="section-divider">
 
-      <h2 class="section__title reveal" style="font-size:1.8rem; margin-top:2.5rem;">Subtypes</h2>
-      <p class="section__body reveal" style="margin-bottom:1.5rem;">
-        <!-- ADD PHYSICIAN'S SUBTYPE EXPLANATION HERE -->
-        There are several subtypes of morphea — plaque, linear, generalized, and others.
-        Knowing your specific subtype helps your care team plan monitoring and treatment.
-        Ask your clinician: <em>"What subtype of morphea do I have?"</em>
-      </p>
+    <!-- ACTIVITY VS DAMAGE -->
+    <div class="content-section reveal" id="activity-damage">
+      <div class="content-section__label">Core Concept</div>
+      <h2>Activity vs. Damage</h2>
+      <div class="callout-quote">
+        <p>"Active morphea is like a fire. Damage is what the fire leaves behind."</p>
+        <cite>— Dr. Heidi Jacobe</cite>
+      </div>
+      <p>Understanding this distinction is the foundation of everything we do in managing morphea. Medications can stop the fire — but they cannot undo damage that has already occurred. This is why timing matters so much.</p>
+      <div class="fire-grid">
+        <div class="fire-card fire-card--active">
+          <div class="fire-card__icon">🔥</div>
+          <div class="fire-card__title">Active Morphea (The Fire)</div>
+          <ul>
+            <li>Purple or red edge around the lesion</li>
+            <li>Warmth to the touch</li>
+            <li>Increasing firmness or tightness</li>
+            <li>Itching or burning sensation</li>
+          </ul>
+        </div>
+        <div class="fire-card fire-card--inactive">
+          <div class="fire-card__icon">🌫️</div>
+          <div class="fire-card__title">Inactive Morphea (The Damage)</div>
+          <ul>
+            <li>Darkening or lightening of the skin</li>
+            <li>Thinning of the skin</li>
+            <li>Indentations or concave areas</li>
+            <li>Tissue loss</li>
+          </ul>
+        </div>
+      </div>
+      <p>When we see someone with morphea, our first goal is to determine which phase they are in. If there is a fire, we want to put it out early to prevent damage and loss of function.</p>
+    </div>
 
-      <h2 class="section__title reveal" style="font-size:1.8rem; margin-top:2.5rem;">What to Watch For</h2>
-      <p class="section__body reveal" style="margin-bottom:2rem;">
-        <!-- ADD PHYSICIAN'S RED FLAGS HERE -->
-        Changes in the size, color, or texture of existing patches, or new patches appearing,
-        are worth reporting to your clinician. Some subtypes — especially linear morphea
-        near a joint — may benefit from earlier intervention.
-      </p>
+    <hr class="section-divider">
 
-      <div class="compliance reveal" style="margin-top:1rem;">
-        <p class="compliance__title">A note from our specialist</p>
-        <div class="compliance__text">
-          <!-- ADD DIRECT PHYSICIAN QUOTE OR SUMMARY HERE -->
-          <p><em>Content from the physician's recorded explanation will be added here.</em></p>
+    <!-- RISK -->
+    <div class="content-section reveal" id="risk">
+      <div class="content-section__label">Risk Factors</div>
+      <h2>Risk: Depth & Location</h2>
+      <p>Not all linear morphea is the same. The potential impact on your health depends on two things: <strong>how deep the morphea goes</strong> and <strong>where it is located.</strong></p>
+      <div class="info-box" style="border-top:3px solid var(--sage);">
+        <div class="info-box__title">🟢 Superficial (skin only) — Lower risk</div>
+        <ul>
+          <li>Less likely to cause tissue loss</li>
+          <li>Less likely to limit range of motion if on a limb</li>
+        </ul>
+      </div>
+      <div class="info-box" style="border-top:3px solid var(--danger);">
+        <div class="info-box__title" style="color:var(--danger);">🔴 Deep (fat, fascia, or muscle) — Higher risk</div>
+        <ul>
+          <li>Greater chance of tissue loss and indentations</li>
+          <li>Possible limitation of range of motion</li>
+          <li>Possible restricted growth if still growing</li>
+          <li>Possible muscle weakness if muscle is involved</li>
+        </ul>
+      </div>
+      <h3 style="font-family:var(--font-display); font-size:1.15rem; color:var(--deep); margin:1.75rem 0 0.6rem;">Arms and Legs</h3>
+      <div class="info-box">
+        <ul>
+          <li>Limited range of motion in joints beneath the morphea</li>
+          <li>Growth restriction if still growing</li>
+          <li>Tissue loss or asymmetrical appearance</li>
+          <li>Muscle weakness if the muscle is involved</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- HEAD & FACE -->
+    <div class="content-section reveal" id="head-face">
+      <div class="content-section__label">Special Considerations</div>
+      <h2>Head & Face Risks</h2>
+      <p>Morphea affecting the head carries the most complex risks. Three areas must be monitored closely.</p>
+      <div class="info-box">
+        <div class="info-box__title">🦷 1. Mouth, Teeth, and Gums</div>
+        <ul>
+          <li>Morphea near the lower face, chin, or upper neck can affect the gums, teeth, and tongue</li>
+          <li>Make sure your dentist, orthodontist, or oral maxillofacial surgeon knows you have morphea</li>
+          <li>Your doctor may refer you to one of these providers if there is concern</li>
+        </ul>
+      </div>
+      <div class="info-box">
+        <div class="info-box__title">👁️ 2. The Eyes</div>
+        <ul>
+          <li>Morphea can affect the tissue surrounding the eye — fat pad, muscles, nearby tissue</li>
+          <li>In ~3% of patients with head morphea, it can cause inflammation inside the eye</li>
+          <li><strong>Everyone with head morphea should be evaluated by an ophthalmologist</strong></li>
+        </ul>
+      </div>
+      <div class="info-box">
+        <div class="info-box__title">🧠 3. The Brain</div>
+        <ul>
+          <li>Brain involvement is rare — the vast majority of patients are not affected</li>
+          <li>Your doctor may order a brain MRI if there is concern</li>
+          <li>Watch for new or worsening headaches, vision changes, seizures, or loss of strength</li>
+        </ul>
+      </div>
+      <div class="urgent-box">
+        <div class="urgent-box__title">⚠️ Seek Emergency Care Immediately If:</div>
+        <ul>
+          <li>Seizures of any kind</li>
+          <li>Sudden loss of strength or paralysis</li>
+          <li>New or worsening headaches, especially on one side</li>
+          <li>Vision changes with pain, redness, or persistent eye grittiness</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- TREATMENT -->
+    <div class="content-section reveal" id="treatment">
+      <div class="content-section__label">Management</div>
+      <h2>Treatment — Tailored to Your Risk</h2>
+      <p>Immunosuppressive medications are like water on the fire — they can stop the spread and prevent new damage, but they cannot erase damage that has already occurred.</p>
+      <div class="info-box">
+        <div class="info-box__title">Current Standard Treatments</div>
+        <ul>
+          <li><strong>First line (high risk active):</strong> Methotrexate</li>
+          <li><strong>If rapid or urgent:</strong> Corticosteroids added to methotrexate</li>
+          <li><strong>Second line:</strong> Mycophenolate mofetil (CellCept) if methotrexate not tolerated</li>
+          <li><strong>Low risk only:</strong> Topical anti-inflammatories or phototherapy under close supervision</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- FIRE METER -->
+    <div class="content-section reveal" id="fire-meter">
+      <div class="content-section__label">Quick Reference</div>
+      <h2>The Morphea Fire Meter</h2>
+      <p>A simple framework to think about your level of risk. This is not a diagnosis — always work with your provider to determine your plan.</p>
+      <div class="fire-meter">
+        <div class="fire-meter__item fire-meter__item--low">
+          <div class="fire-meter__label fire-meter__label--low">🟢 Low Risk</div>
+          <div class="fire-meter__text">Superficial, stable lesions. No organ involvement.<strong>→ Topical therapy or phototherapy with close monitoring.</strong></div>
+        </div>
+        <div class="fire-meter__item fire-meter__item--mid">
+          <div class="fire-meter__label fire-meter__label--mid">🟡 Mid Risk</div>
+          <div class="fire-meter__text">Active, changing lesions or mid-to-higher risk sites.<strong>→ Consider methotrexate or CellCept.</strong></div>
+        </div>
+        <div class="fire-meter__item fire-meter__item--high">
+          <div class="fire-meter__label fire-meter__label--high">🔴 High Risk</div>
+          <div class="fire-meter__text">Deep involvement, face/scalp, joint, or organ involvement.<strong>→ Systemic steroids + methotrexate or CellCept.</strong></div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- TREATING DAMAGE -->
+    <div class="content-section reveal" id="damage">
+      <div class="content-section__label">After the Fire</div>
+      <h2>Treating Damage When Morphea is Inactive</h2>
+      <p>Even after morphea becomes inactive, the damage it left behind can often be addressed.</p>
+      <div class="info-box">
+        <div class="info-box__title">🏥 Facial Tissue Loss</div>
+        <ul>
+          <li>Fat transfer (plastic surgery consultation) is often recommended</li>
+          <li>Only done when morphea is <strong>inactive</strong></li>
+          <li>Must be done in collaboration with a dermatologist or rheumatologist familiar with morphea</li>
+          <li>Fat transfer does not treat active morphea or prevent new areas</li>
+        </ul>
+      </div>
+      <div class="info-box">
+        <div class="info-box__title">🦾 Limb Function</div>
+        <ul><li>Occupational and physical therapy — range of motion, strengthening, and balance</li></ul>
+      </div>
+      <div class="info-box">
+        <div class="info-box__title">💬 Facial Function</div>
+        <ul>
+          <li>Occupational therapy for difficulty opening the mouth</li>
+          <li>Oral maxillofacial surgery for muscle spasms or deep involvement</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- FINDING A PROVIDER -->
+    <div class="content-section reveal" id="provider">
+      <div class="content-section__label">Getting Help</div>
+      <h2>Finding the Right Provider</h2>
+      <p>Linear morphea is extremely rare. Even excellent doctors may not be familiar with its evaluation and treatment. <strong>Time matters — the fire must be put out early.</strong></p>
+      <div class="info-box">
+        <div class="info-box__title">Who to look for</div>
+        <ul>
+          <li><strong>In children:</strong> Pediatric dermatologist or pediatric rheumatologist at an academic medical center</li>
+          <li><strong>In adults:</strong> Medical dermatologist or dermatologist specializing in rheumatologic dermatology</li>
+          <li>Look for providers affiliated with a medical school</li>
+          <li>Resources: Medical Dermatology Society, Rheumatology Dermatology Society, National Scleroderma Foundation</li>
+        </ul>
+      </div>
+      <div class="info-box">
+        <div class="info-box__title">Specialist referrals to ask your provider about</div>
+        <ul>
+          <li>Ophthalmologist — especially for head morphea</li>
+          <li>Rheumatologist</li>
+          <li>Orthodontist or oral maxillofacial surgeon</li>
+          <li>Neurologist if head involvement</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- BEING PROACTIVE -->
+    <div class="content-section reveal" id="proactive">
+      <div class="content-section__label">Patient Empowerment</div>
+      <h2>How to Be Proactive</h2>
+      <div class="info-box">
+        <ul>
+          <li>📸 <strong>Photograph your lesions regularly</strong> to track changes over time</li>
+          <li>🔥 Learn to recognize the <strong>signs of activity vs. damage</strong></li>
+          <li>💊 Take medications consistently and <strong>report side effects promptly</strong></li>
+          <li>📞 Contact your provider between appointments if you notice new lesions, sudden range-of-motion loss, or accelerating tissue loss</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- MYTHS — Fixed Accordion -->
+    <div class="content-section reveal" id="myths">
+      <div class="content-section__label">Setting the Record Straight</div>
+      <h2>Common Myths — Busted</h2>
+      <p style="margin-bottom:1.25rem;">Misinformation about morphea circulates online and can delay treatment or cause unnecessary anxiety. Click each myth to see what the evidence actually says.</p>
+
+      <div class="accordion">
+        <button class="accordion__trigger" type="button">
+          <span class="accordion__myth">❌ Linear morphea can turn into systemic sclerosis.</span>
+          <span class="accordion__chevron">▼</span>
+        </button>
+        <div class="accordion__body">
+          <div class="accordion__content"><strong>Fact:</strong> There is no evidence of this. They are completely different conditions. People with linear morphea do not have increased risk of heart, lung, or GI involvement — the hallmarks of systemic sclerosis.</div>
         </div>
       </div>
 
-      <!-- Back link -->
-      <div style="margin-top:3rem; padding-top:2rem; border-top:1px solid var(--border);">
-        <a href="patients.html" style="font-size:0.85rem; color:var(--forest); font-weight:500;">
-          ← Back to Patients & Families
-        </a>
+      <div class="accordion">
+        <button class="accordion__trigger" type="button">
+          <span class="accordion__myth">❌ COVID vaccines or COVID infection caused morphea.</span>
+          <span class="accordion__chevron">▼</span>
+        </button>
+        <div class="accordion__body">
+          <div class="accordion__content"><strong>Fact:</strong> Studies — including one by Dr. Jacobe's own research group — show morphea case rates remained stable through the pandemic and after vaccine rollout. No population-level link has been found.</div>
+        </div>
       </div>
 
-    </div>
-  </section>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__brand">Sclerosingskin</div>
-      <div class="footer__links">
-        <a href="../index.html">Start Here</a>
-        <a href="patients.html">Patients & Families</a>
-        <a href="clinicians.html">For Clinicians</a>
-        <a href="products.html">Support Products</a>
-        <a href="disclosures.html">Disclosures</a>
+      <div class="accordion">
+        <button class="accordion__trigger" type="button">
+          <span class="accordion__myth">❌ Lyme disease causes morphea and antibiotics can cure it.</span>
+          <span class="accordion__chevron">▼</span>
+        </button>
+        <div class="accordion__body">
+          <div class="accordion__content"><strong>Fact:</strong> Evidence does not support Lyme disease as a cause of linear morphea. Antibiotics do not treat morphea. Routine Lyme testing is not recommended unless there is a clear clinical history evaluated by a qualified specialist.</div>
+        </div>
       </div>
-      <p class="footer__disclaimer">
-        Educational use only — not medical advice. Not a substitute for professional medical advice, diagnosis, or treatment.
-        Views are my own and are not presented on behalf of my employer.
-      </p>
-    </div>
-  </footer>
 
-  <script src="../js/main.js"></script>
+      <div class="accordion">
+        <button class="accordion__trigger" type="button">
+          <span class="accordion__myth">❌ Detox therapies or special diets can cure morphea.</span>
+          <span class="accordion__chevron">▼</span>
+        </button>
+        <div class="accordion__body">
+          <div class="accordion__content"><strong>Fact:</strong> No research supports this. Specialized diets can delay real treatment — increasing the risk of permanent damage from untreated active disease.</div>
+        </div>
+      </div>
+
+      <div class="accordion">
+        <button class="accordion__trigger" type="button">
+          <span class="accordion__myth">❌ Morphea always burns out — treatment can wait.</span>
+          <span class="accordion__chevron">▼</span>
+        </button>
+        <div class="accordion__body">
+          <div class="accordion__content"><strong>Fact:</strong> Untreated active morphea causes permanent damage. Just like an untreated forest fire causes far more destruction than one addressed early, leaving active morphea untreated can result in far more damage than prompt treatment.</div>
+        </div>
+      </div>
+
+      <div class="accordion">
+        <button class="accordion__trigger" type="button">
+          <span class="accordion__myth">❌ DIY phototherapy or tanning beds can treat morphea.</span>
+          <span class="accordion__chevron">▼</span>
+        </button>
+        <div class="accordion__body">
+          <div class="accordion__content"><strong>Fact:</strong> Tanning beds are definitively linked with increased skin cancer risk, including melanoma. Home phototherapy units have uncertain output and wavelength. Phototherapy must be guided by a knowledgeable dermatologist.</div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- Closing -->
+    <div class="compliance reveal">
+      <p class="compliance__title">A note from Dr. Jacobe</p>
+      <div class="compliance__text">
+        <p style="font-family:var(--font-display); font-size:1.1rem; font-style:italic; color:var(--deep); line-height:1.6; margin-bottom:0.75rem;">
+          "With linear morphea, we treat activity like a fire. The earlier we put it out —
+          especially in high-risk sites or with deep tissue involvement — the more damage we
+          can prevent. Bring your photos and questions to your appointments, and we will tailor
+          a plan to your linear morphea lesion's activity, site, and depth."
+        </p>
+        <p>— Dr. Heidi Jacobe, Board-Certified Dermatologist &amp; Professor, UT Southwestern Medical Center</p>
+      </div>
+    </div>
+
+    <div style="margin-top:2.5rem; padding-top:2rem; border-top:1px solid var(--border); display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;">
+      <a href="patients.html" style="font-size:0.85rem; color:var(--forest); font-weight:500;">← Back to Patients & Families</a>
+      <a href="scleroderma.html" class="btn btn--outline" style="font-size:0.82rem; padding:0.6rem 1.4rem;">Next: Scleroderma →</a>
+    </div>
+
+  </main>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__brand">Sclerosingskin</div>
+    <div class="footer__links">
+      <a href="../index.html">Start Here</a>
+      <a href="patients.html">Patients & Families</a>
+      <a href="clinicians.html">For Clinicians</a>
+      <a href="products.html">Support Products</a>
+      <a href="disclosures.html">Disclosures</a>
+    </div>
+    <p class="footer__disclaimer">Educational use only — not medical advice. Not a substitute for professional medical advice, diagnosis, or treatment. Views are my own and are not presented on behalf of my employer.</p>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+<script>
+  // Reading progress bar
+  const bar = document.getElementById('reading-progress');
+  window.addEventListener('scroll', () => {
+    const pct = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight) * 100;
+    bar.style.width = pct + '%';
+  }, { passive: true });
+
+  // Nav shadow on scroll
+  window.addEventListener('scroll', () => {
+    document.getElementById('main-nav').classList.toggle('scrolled', window.scrollY > 10);
+  }, { passive: true });
+
+  // Accordion — using is-open class, one open at a time
+  document.querySelectorAll('.accordion').forEach(acc => {
+    acc.querySelector('.accordion__trigger').addEventListener('click', function() {
+      const isOpen = acc.classList.contains('is-open');
+      // close all
+      document.querySelectorAll('.accordion').forEach(a => a.classList.remove('is-open'));
+      // open this one if it was closed
+      if (!isOpen) acc.classList.add('is-open');
+    });
+  });
+
+  // TOC active state on scroll
+  const sections = document.querySelectorAll('.content-section[id]');
+  const tocLinks = document.querySelectorAll('.toc__list a');
+  const tocObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        tocLinks.forEach(l => l.classList.remove('toc-active'));
+        const active = document.querySelector('.toc__list a[href="#' + entry.target.id + '"]');
+        if (active) active.classList.add('toc-active');
+      }
+    });
+  }, { rootMargin: '-15% 0px -75% 0px' });
+  sections.forEach(s => tocObserver.observe(s));
+</script>
 </body>
 </html>
