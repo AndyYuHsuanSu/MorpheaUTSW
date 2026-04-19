@@ -9,8 +9,8 @@
   <style>
     .product-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:1.5rem; margin-top:2.5rem; }
     .product-card {
-      background: var(--warm-white);
-      border: 1px solid var(--border);
+      background: var(--white);
+      border: 1px solid var(--stone);
       border-radius: 8px;
       padding: 1.75rem;
       transition: all 0.25s ease;
@@ -18,20 +18,20 @@
     .product-card:hover { transform:translateY(-3px); box-shadow:0 12px 32px rgba(0,0,0,0.07); }
     .product-card__category {
       font-size:0.7rem; letter-spacing:0.15em; text-transform:uppercase;
-      color:var(--clay); font-weight:500; margin-bottom:0.6rem;
+      color:var(--amber); font-weight:500; margin-bottom:0.6rem;
     }
     .product-card__name {
       font-family:var(--font-display); font-size:1.2rem; font-weight:600;
-      color:var(--deep); margin-bottom:0.5rem;
+      color:var(--ink); margin-bottom:0.5rem;
     }
     .product-card__desc { font-size:0.88rem; color:var(--text-light); line-height:1.6; margin-bottom:1.25rem; }
     .product-card__link {
       display:inline-block; padding:0.6rem 1.25rem;
-      background:var(--forest); color:#fff;
+      background:var(--teal); color:#fff;
       border-radius:var(--radius); font-size:0.82rem; font-weight:500;
       transition:background 0.2s;
     }
-    .product-card__link:hover { background:var(--deep); }
+    .product-card__link:hover { background:var(--ink); }
     .micro-disclosure {
       font-size:0.75rem; color:var(--text-light);
       margin-top:0.6rem; font-style:italic;
@@ -78,7 +78,7 @@
   </section>
 
   <!-- COI Disclosure — required, visible without scrolling -->
-  <section style="padding:2rem 0; background:var(--cream); border-bottom:1px solid var(--border);">
+  <section style="padding:2rem 0; background:var(--ivory-dark); border-bottom:1px solid var(--stone);">
     <div class="container">
       <div class="compliance">
         <p class="compliance__title">Transparency & COI Disclosure</p>
@@ -164,7 +164,7 @@
   </section>
 
   <!-- Footer Reminder -->
-  <section style="padding:1.5rem 0; background:var(--cream); border-top:1px solid var(--border);">
+  <section style="padding:1.5rem 0; background:var(--ivory-dark); border-top:1px solid var(--stone);">
     <div class="container" style="text-align:center; font-size:0.82rem; color:var(--text-light);">
       Educational use only &bull; not medical advice &bull; not a substitute for clinical care
     </div>
