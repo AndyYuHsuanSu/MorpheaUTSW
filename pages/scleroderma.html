@@ -24,7 +24,7 @@
 
   <!-- Breadcrumb -->
   <div style="background:var(--ivory-dark); border-bottom:1px solid var(--stone); padding:0.75rem 0;">
-    <div class="container" style="font-size:0.82rem; color:var(--text-light);">
+    <div class="container" style="font-size:0.984rem; color:var(--text-light);">
       <a href="patients.html" style="color:var(--teal);">Patients & Families</a>
       <span style="margin:0 0.5rem;">›</span>
       Scleroderma
@@ -33,23 +33,25 @@
 
   <!-- Header -->
   <section style="padding:4rem 0 2rem; background: linear-gradient(180deg, rgba(46,64,53,0.07) 0%, transparent 100%);">
-    <div class="container" style="max-width:780px;">
-      <span style="font-size:0.7rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--teal-light); font-weight:500;">Systemic · Multiple Systems</span>
+    <div class="container" style="max-width:1080px;">
+      <span style="font-size:0.868rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--teal-light); font-weight:500;">Systemic · Multiple Systems</span>
       <h1 class="section__title" style="font-size:clamp(2.4rem,5vw,4rem); margin-top:0.5rem;">Scleroderma</h1>
-      <p class="section__body" style="font-size:1.05rem; margin-top:0.75rem;">
-        A systemic condition that can affect the skin, blood vessels, and internal organs.
-        Here is what our specialist wants you to know about recognition, care, and what to expect.
-      </p>
-      <div class="hero__disclaimer" style="margin:2rem 0 0; max-width:100%;">
-        <strong>Educational use only — not medical advice.</strong>
-        Always consult your clinician for personal medical decisions.
+      <div class="split-lead" style="margin-top:1rem;">
+        <p class="section__body" style="font-size:1.19rem; margin:0;">
+          A systemic condition that can affect the skin, blood vessels, and internal organs.
+          Here is what our specialist wants you to know about recognition, care, and what to expect.
+        </p>
+        <div class="hero__disclaimer" style="margin:0; max-width:none;">
+          <strong>Educational use only — not medical advice.</strong>
+          Always consult your clinician for personal medical decisions.
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Main Content -->
   <section class="section" style="padding-top:2.5rem;">
-    <div class="container" style="max-width:780px;">
+    <div class="container" style="max-width:1080px;">
 
       <!-- ═══════════════════════════════════════════════════════
            PHYSICIAN CONTENT GOES HERE
@@ -57,42 +59,54 @@
            drawn from the physician's audio/notes.
       ════════════════════════════════════════════════════════ -->
 
-      <h2 class="section__title reveal" style="font-size:1.8rem;">What is Scleroderma?</h2>
-      <p class="section__body reveal" style="margin-bottom:1.5rem;">
-        <!-- ADD PHYSICIAN'S EXPLANATION HERE -->
-        Systemic sclerosis (scleroderma) is a condition in which the immune system triggers
-        excess collagen production, causing skin hardening that can also affect blood vessels
-        and internal organs including the lungs, heart, kidneys, and digestive tract.
-      </p>
+      <!-- Parallel explainer blocks: independent questions, so they read fine
+           side by side and the row fills the width instead of stranding it. -->
+      <div class="prose-grid">
 
-      <h2 class="section__title reveal" style="font-size:1.8rem; margin-top:2.5rem;">How is it Different from Morphea?</h2>
-      <p class="section__body reveal" style="margin-bottom:1.5rem;">
-        <!-- ADD PHYSICIAN'S COMPARISON HERE -->
-        The key distinction is systemic involvement. Morphea stays in the skin.
-        Scleroderma can affect internal systems, which is why early diagnosis,
-        specialist involvement, and regular monitoring are so important.
-      </p>
-
-      <h2 class="section__title reveal" style="font-size:1.8rem; margin-top:2.5rem;">Why Early Recognition Matters</h2>
-      <p class="section__body reveal" style="margin-bottom:2rem;">
-        <!-- ADD PHYSICIAN'S EARLY RECOGNITION CONTENT HERE -->
-        Raynaud's phenomenon (color changes in fingers with cold or stress) is often
-        an early sign. Skin tightening, especially on the hands and face, is another
-        early indicator. If you notice these, ask your doctor about referral to a
-        sclerosing skin disease specialist.
-      </p>
-
-      <div class="compliance reveal" style="margin-top:1rem;">
-        <p class="compliance__title">A note from our specialist</p>
-        <div class="compliance__text">
-          <!-- ADD DIRECT PHYSICIAN QUOTE OR SUMMARY HERE -->
-          <p><em>Content from the physician's recorded explanation will be added here.</em></p>
+        <div class="prose-grid__block reveal">
+          <h2 class="section__title" style="font-size:1.8rem;">What is Scleroderma?</h2>
+          <p class="section__body" style="margin:0;">
+            <!-- ADD PHYSICIAN'S EXPLANATION HERE -->
+            Systemic sclerosis (scleroderma) is a condition in which the immune system triggers
+            excess collagen production, causing skin hardening that can also affect blood vessels
+            and internal organs including the lungs, heart, kidneys, and digestive tract.
+          </p>
         </div>
+
+        <div class="prose-grid__block reveal">
+          <h2 class="section__title" style="font-size:1.8rem;">How is it Different from Morphea?</h2>
+          <p class="section__body" style="margin:0;">
+            <!-- ADD PHYSICIAN'S COMPARISON HERE -->
+            The key distinction is systemic involvement. Morphea stays in the skin.
+            Scleroderma can affect internal systems, which is why early diagnosis,
+            specialist involvement, and regular monitoring are so important.
+          </p>
+        </div>
+
+        <div class="prose-grid__block reveal">
+          <h2 class="section__title" style="font-size:1.8rem;">Why Early Recognition Matters</h2>
+          <p class="section__body" style="margin:0;">
+            <!-- ADD PHYSICIAN'S EARLY RECOGNITION CONTENT HERE -->
+            Raynaud's phenomenon (color changes in fingers with cold or stress) is often
+            an early sign. Skin tightening, especially on the hands and face, is another
+            early indicator. If you notice these, ask your doctor about referral to a
+            sclerosing skin disease specialist.
+          </p>
+        </div>
+
+        <div class="compliance reveal" style="margin:0;">
+          <p class="compliance__title">A note from our specialist</p>
+          <div class="compliance__text">
+            <!-- ADD DIRECT PHYSICIAN QUOTE OR SUMMARY HERE -->
+            <p><em>Content from the physician's recorded explanation will be added here.</em></p>
+          </div>
+        </div>
+
       </div>
 
       <!-- Back link -->
       <div style="margin-top:3rem; padding-top:2rem; border-top:1px solid var(--stone);">
-        <a href="patients.html" style="font-size:0.85rem; color:var(--teal); font-weight:500;">
+        <a href="patients.html" style="font-size:0.994rem; color:var(--teal); font-weight:500;">
           ← Back to Patients & Families
         </a>
       </div>

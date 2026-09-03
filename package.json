@@ -1,0 +1,24 @@
+{
+  "name": "morpheautsw",
+  "version": "1.0.0",
+  "description": "``` sclerosingskindoc/ ├── index.html          ← START HERE (homepage / landing page) ├── css/ │   └── style.css       ← All styles (design tokens, layout, components) ├── js/ │   └── main.js         ← Shared JS (nav toggle, scroll reveal, active links) └── pages/     ├── patients.html   ← For Patients & Families     ├── clinicians.html ← For Clinicians     ├── products.html   ← Support Products (add product cards here)     └── disclosures.html← Full COI / Compliance disclosures ```",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndyYuHsuanSu/MorpheaUTSW.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/AndyYuHsuanSu/MorpheaUTSW/issues"
+  },
+  "homepage": "https://github.com/AndyYuHsuanSu/MorpheaUTSW#readme",
+  "devDependencies": {
+    "puppeteer": "^25.10.0"
+  }
+}
