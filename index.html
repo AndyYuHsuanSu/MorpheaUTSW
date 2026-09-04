@@ -1,209 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Start Here — Sclerosing Skin Disease Education</title>
-  <meta name="description" content="Evidence-based education about morphea and scleroderma for patients, families, and clinicians." />
-  <link rel="stylesheet" href="css/style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sclerosing Skin — Morphea and scleroderma education</title>
+<meta name="description" content="Plain-language education about morphea and scleroderma for patients, families, and clinicians, from a board-certified dermatologist at UT Southwestern.">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- ── Navigation ── -->
-  <nav class="nav">
-    <div class="nav__inner">
-      <a href="index.html" class="nav__brand">Sclerosing<span>Skin</span></a>
-      <ul class="nav__links">
-        <li><a href="index.html" class="active">Start Here</a></li>
-        <li><a href="pages/patients.html">Patients &amp; Families</a></li>
-        <li><a href="pages/clinicians.html">For Clinicians</a></li>
-        <li><a href="pages/products.html">Support Products</a></li>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="masthead">
+  <div class="frame masthead__inner">
+    <a class="wordmark" href="index.html">Sclerosing<em>Skin</em></a>
+    <button class="navtoggle" type="button" aria-expanded="false" aria-controls="mainnav">Menu</button>
+    <nav class="mainnav" id="mainnav" aria-label="Main">
+      <ul>
+        <li><a href="index.html" aria-current="page">Start here</a></li>
+        <li><a href="pages/patients.html">Patients &amp; families</a></li>
+        <li><a href="pages/clinicians.html">Clinicians</a></li>
+        <li><a href="pages/products.html">Support products</a></li>
         <li><a href="pages/disclosures.html">Disclosures</a></li>
       </ul>
-      <div class="nav__toggle" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </div>
-    </div>
-  </nav>
+    </nav>
+  </div>
+</header>
 
-  <!-- ── Hero ── -->
-  <section class="hero" style="background-image: url('images/DermImage.png'); background-size: cover; background-position: center 30%; background-repeat: no-repeat;">
-    <div class="hero__overlay"></div>
-    <div class="hero__inner">
+<main id="main">
+
+  <!-- Opening statement. The photograph is the ground, washed back from the left
+       so the type sits on clean paper. -->
+  <section class="section hero">
+    <div class="frame">
       <div class="hero__content">
-        <p class="hero__eyebrow">Heidi Jacobe · Board-Certified Dermatologist</p>
-        <h1 class="hero__title">
-          Understanding<br><em>Sclerosing</em><br>Skin Disease
-        </h1>
-        <div class="hero__disclaimer">
-          <strong>Educational use only — not medical advice.</strong><br>
-          Content on this site is provided for general education and support and is not a
-          substitute for professional medical advice, diagnosis, or treatment. Use of this
-          site does not establish a patient–physician relationship.
-        </div>
-        <div class="hero__ctas">
-          <a href="#navigate" class="btn btn--primary">Explore Resources →</a>
-          <a href="pages/patients.html" class="btn btn--outline">I'm a Patient / Family</a>
-        </div>
-      </div>
-      <!-- Right column shows background image through the diagonal overlay -->
-    </div>
-  </section>
-
-  <!-- ── Navigation Cards ── -->
-  <section class="section" id="navigate">
-    <div class="container">
-
-      <!-- Section header -->
-      <div style="margin-bottom: 3.5rem;">
-        <p class="section__label reveal">How to use this resource</p>
-        <h2 class="section__title reveal">Everything you need,<br><em>organized by who you are</em></h2>
-        <p class="section__body reveal" style="margin-top: 0.5rem;">
-          Whether you're a newly diagnosed patient, a family member trying to understand, or a clinician
-          looking for quick-reference resources. Start with the section most relevant to you.
+        <h1>Understanding sclerosing skin disease</h1>
+        <p class="lede" style="margin-top: var(--s5);">
+          Morphea and scleroderma are often confused with each other, and rarely
+          explained well. This site highlights what they are, how they differ, and
+          what to ask your doctor — written by the dermatologist who treats them.
         </p>
-      </div>
-
-      <div class="cards" style="grid-template-columns: 1fr 1fr;">
-
-        <div class="card reveal">
-          <div class="card__icon">🔍</div>
-          <h3 class="card__title">The Basics</h3>
-          <p class="card__text">
-            New to morphea or scleroderma? Start here for a simple
-            explanation of these conditions.
-          </p>
-          <a href="pages/patients.html#basics" class="card__link">Start learning →</a>
+        <div class="btnrow">
+          <a class="btn" href="pages/patients.html">Start with the basics</a>
+          <a class="btn btn--ghost" href="pages/questions.html">Questions to ask your doctor</a>
         </div>
-
-        <div class="card reveal">
-          <div class="card__icon">👥</div>
-          <h3 class="card__title">Patients &amp; Families</h3>
-          <p class="card__text">
-            Navigating appointments, communicating your experience, and
-            building a care routine. Structured resources for every stage
-            of your journey.
-          </p>
-          <a href="pages/patients.html" class="card__link">Go to Patients &amp; Families →</a>
-        </div>
-
-        <div class="card reveal">
-          <div class="card__icon">🩺</div>
-          <h3 class="card__title">For Clinicians</h3>
-          <p class="card__text">
-            Early recognition, longitudinal tracking, emerging research,
-            and quick-reference links, organized for real-world practice.
-          </p>
-          <a href="pages/clinicians.html" class="card__link">Go to Clinician Resources →</a>
-        </div>
-
-        <div class="card reveal">
-          <div class="card__icon">🛍️</div>
-          <h3 class="card__title">Support Products</h3>
-          <p class="card__text">
-            A curated list of non-treatment support products recommended
-            by our provider. Support is not the same as treatment.
-          </p>
-          <a href="pages/products.html" class="card__link">View Support Products →</a>
-        </div>
-
+        <p class="micro hero__credit">
+          Written and reviewed by Heidi Jacobe, MD, MSCS, Professor of Dermatology
+          at UT Southwestern Medical Center.
+        </p>
       </div>
     </div>
   </section>
 
-  <!-- ── About the Provider ── -->
-  <section class="section section--alt">
-    <div class="container" style="display:grid; grid-template-columns:1fr 1fr; gap:5rem; align-items:center;">
-
-      <!-- Provider Photo -->
-      <div class="reveal" style="display:flex; flex-direction:column; align-items:center; gap:1.5rem;">
-        <div style="
-          width: 100%;
-          max-width: 360px;
-          aspect-ratio: 3/4;
-          border-radius: var(--radius-lg);
-          overflow: hidden;
-          box-shadow: var(--shadow-lg);
-          border: 4px solid var(--white);
-          outline: 1px solid var(--stone);
-          position: relative;
-        ">
-          <img
-            src="images/heidiJacobeNONUTSW.jpg"
-            alt="Dr. Heidi Jacobe"
-            style="width:100%; height:100%; object-fit:cover; object-position:top center;"
-          />
-        </div>
-        <div style="text-align:center;">
-          <p style="font-family:var(--font-display); font-size:1.265rem; font-weight:500; color:var(--ink); margin-bottom:0.3rem;">
-            Heidi Jacobe, MD, MSCS
-          </p>
-          <p style="font-size:0.984rem; color:var(--text-light); letter-spacing:0.04em; line-height:1.65;">
-            Board Certified Dermatologist, Professor &amp; Researcher<br>
-            UT Southwestern Medical Center
-          </p>
-        </div>
-      </div>
-
-      <!-- Text -->
-      <div>
-        <p class="section__label reveal">About this resource</p>
-        <h2 class="section__title reveal">Board-certified expertise,<br><em>distilled for you</em></h2>
-        <p class="section__body reveal" style="margin-bottom:1.75rem;">
-          This site was created by a board-certified dermatologist and professor
-          specializing in sclerosing skin diseases at UT Southwestern Medical Center.
+  <!-- Routing. Chevron lists rather than cards: the reference's own device,
+       and it lets each route carry a real sentence instead of a label. -->
+  <section class="section">
+    <div class="frame">
+      <div class="section__head">
+        <h2>Where to start</h2>
+        <p>
+          The same material is organised four ways, depending on why you are here.
+          Nothing below is behind a form or a login.
         </p>
-        <p class="section__body reveal" style="margin-bottom:2.5rem;">
-          The goal is simple: reduce confusion, improve communication between patients
-          and their care teams, and provide a trustworthy starting point for anyone
-          affected by morphea or scleroderma.
-        </p>
-        <a href="pages/disclosures.html" class="btn btn--outline reveal">
-          View Full Disclosures &amp; COI
-        </a>
       </div>
-
+      <ul class="linklist linkgrid">
+          <li>
+            <a href="pages/patients.html">Patients and families</a>
+            <p>Newly diagnosed, or supporting someone who is. Start with the difference
+               between morphea and scleroderma, then how to prepare for an appointment.</p>
+          </li>
+          <li>
+            <a href="pages/morphea.html">Linear morphea in depth</a>
+            <p>The long read: activity versus damage, how risk depends on depth and
+               location, treatment, and the myths worth discarding.</p>
+          </li>
+          <li>
+            <a href="pages/clinicians.html">Clinicians</a>
+            <p>Early recognition, longitudinal tracking, and referral thresholds,
+               organised for real-world practice.</p>
+          </li>
+          <li>
+            <a href="pages/products.html">Support products</a>
+            <p>Non-treatment items that may help with comfort and daily routine.
+               Support is not the same as treatment.</p>
+          </li>
+      </ul>
     </div>
   </section>
 
-  <!-- ── Quick Disclaimer Banner ── -->
-  <section class="section" style="padding:4rem 0;">
-    <div class="container">
-      <div class="compliance reveal">
-        <p class="compliance__title">A note before you explore</p>
-        <div class="compliance__text">
+  <!-- The signature: the one distinction that reorients most people. -->
+  <section class="section section--band">
+    <div class="frame">
+      <div class="section__head">
+        <h2>Two conditions, one distinction</h2>
+        <p>
+          These two terms get used interchangeably online. They are not the same
+          condition, and the difference decides almost everything else about your care.
+        </p>
+      </div>
+      <div class="compare">
+        <div>
+          <p class="compare__tag">Stays in the skin</p>
+          <h3>Morphea</h3>
           <p>
-            This site is for <strong>general education and support only</strong>.
-            It is not a substitute for professional medical advice, diagnosis, or treatment.
-            Always seek the guidance of your physician or qualified health provider with any
-            questions you may have regarding a medical condition. <strong>In an emergency,
-            call 911 or go to your nearest emergency room.</strong>
+            A localised form of sclerosing skin disease. It affects the skin and the
+            tissue beneath it, but not the internal organs. Subtypes vary widely, and
+            knowing which one you have matters more than the label itself.
           </p>
+          <p style="margin-top: var(--s4);"><a href="pages/morphea.html">Read about linear morphea</a></p>
+        </div>
+        <div>
+          <p class="compare__tag">Can involve organs</p>
+          <h3>Scleroderma</h3>
+          <p>
+            A systemic condition that can affect skin, blood vessels, and internal
+            organs. Early recognition and specialist care are especially important,
+            which is why the distinction is worth getting right early.
+          </p>
+          <p style="margin-top: var(--s4);"><a href="pages/scleroderma.html">Read about scleroderma</a></p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ── Footer ── -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__brand">Sclerosingskin</div>
-      <div class="footer__links">
-        <a href="index.html">Start Here</a>
-        <a href="pages/patients.html">Patients &amp; Families</a>
-        <a href="pages/clinicians.html">For Clinicians</a>
-        <a href="pages/products.html">Support Products</a>
-        <a href="pages/disclosures.html">Disclosures</a>
+  <!-- Attribution. Kept plain: a portrait, a name, and what she does. -->
+  <section class="section">
+    <div class="frame">
+      <div class="split">
+        <figure>
+          <img src="images/heidiJacobeNONUTSW.jpg" alt="Portrait of Dr. Heidi Jacobe" width="720" height="720">
+        </figure>
+        <div>
+          <h2>Who writes this?</h2>
+          <p style="margin-top: var(--s4);">
+            <strong>Heidi Jacobe, MD, MSCS</strong> is a board-certified dermatologist
+            and Professor at UT Southwestern Medical Center, where she has spent more
+            than twenty years caring for children and adults with morphea.
+          </p>
+          <p>
+            The goal of this website is narrow and practical: reduce confusion, improve the
+            conversation between patients and their care teams, and give anyone
+            affected by these conditions a trustworthy place to start.
+          </p>
+          <p style="margin-top: var(--s5);"><a href="pages/disclosures.html">Disclosures and conflict-of-interest statement</a></p>
+        </div>
       </div>
-      <p class="footer__disclaimer">
-        Educational use only — not medical advice. Content on this site is provided for
-        general education and support and is not a substitute for professional medical
-        advice, diagnosis, or treatment. Use of this site does not establish a
-        doctor–patient relationship.
-      </p>
     </div>
-  </footer>
+  </section>
 
-  <script src="js/main.js"></script>
+</main>
+
+<footer class="colophon">
+  <div class="frame">
+    <div class="colophon__grid">
+      <div>
+        <h2>Sclerosing<em>Skin</em></h2>
+        <p>Education about morphea and scleroderma for patients, families, and clinicians.</p>
+      </div>
+      <div>
+        <h3>Read</h3>
+        <ul class="linklist linklist--tight">
+          <li><a href="pages/patients.html">Patients &amp; families</a></li>
+          <li><a href="pages/morphea.html">Linear morphea</a></li>
+          <li><a href="pages/scleroderma.html">Scleroderma</a></li>
+          <li><a href="pages/questions.html">Questions to ask</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>More</h3>
+        <ul class="linklist linklist--tight">
+          <li><a href="pages/clinicians.html">For clinicians</a></li>
+          <li><a href="pages/products.html">Support products</a></li>
+          <li><a href="pages/disclosures.html">Disclosures &amp; COI</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="colophon__legal">
+      Educational use only — not medical advice. Content on this site is provided for
+      general education and support and is not a substitute for professional medical
+      advice, diagnosis, or treatment. Use of this site does not establish a
+      doctor–patient relationship. In an emergency, call 911 or go to your nearest
+      emergency room.
+    </p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
 </body>
 </html>
